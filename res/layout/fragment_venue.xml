@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/venue_layout"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+
+        >
+        <GridLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="7">
+
+            <!-- address -->
+            <TextView
+                android:id="@+id/col0_venuename"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_row="0"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/col_venuename"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_row="0"
+                android:paddingRight="20dp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/col0_addr"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="1"
+                android:text="Address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col_addr"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="1"
+                />
+            <TextView
+                android:id="@+id/col0_city"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="2"
+                android:text="City"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col_city"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="2"/>
+
+            <TextView
+                android:id="@+id/col0_phone"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="3"
+                android:text="Phone Number"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/col_phone"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="3"
+                />
+
+            <TextView
+                android:id="@+id/col0_openhours"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="4"
+                android:text="Open Hours"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col_openhours"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="4"/>
+
+            <TextView
+                android:id="@+id/col0_grule"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="5"
+                android:text="General Rule"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col_grule"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="5" />
+            <TextView
+                android:id="@+id/col0_crule"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_marginTop="15dp"
+                android:layout_row="6"
+                android:text="Child Rule"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/col_crule"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_columnWeight="3"
+                android:layout_marginTop="15dp"
+                android:paddingRight="20dp"
+                android:layout_row="6"
+                />
+
+        </GridLayout>
+
+        <fragment
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_below="@id/table"/>
+        <EditText
+            android:id="@+id/tv_lat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="" />
+        <EditText
+            android:id="@+id/tv_lng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text=""/>
+
+    </RelativeLayout>
+</ScrollView>
+

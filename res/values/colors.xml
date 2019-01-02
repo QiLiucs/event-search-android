@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03a9f5</color>
+    <color name="colorPrimaryDark">#0288d1</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorUpTitle">#1c86ff</color>
+    <color name="colorUpTime">#848484</color>
+    <color name="colorUpArtist">#ea7652</color>
+</resources>

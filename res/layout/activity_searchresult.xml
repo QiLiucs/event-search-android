@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_layout">
+    <TextView
+        android:id="@+id/tv_searchnoresults"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No results"
+        android:textAlignment="center"
+        android:gravity="center"/>
+    <ListView
+        android:id="@+id/lv_event"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fastScrollAlwaysVisible="true"></ListView>
+
+</RelativeLayout>
